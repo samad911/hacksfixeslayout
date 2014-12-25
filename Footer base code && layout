@@ -1,0 +1,50 @@
+<style>
+a.social1:hover {box-shadow:2px 2px 2px rgb(100,100,100) inset;}
+</style>
+
+
+<footer0 style="float:left">
+<a href="http://hacksandfixes.blogspot.in">
+<img src="http://3.bp.blogspot.com/-eWgvUEC8Yyg/VJei6rsYGII/AAAAAAAAAG0/lTqr7X9L5wk/s1600/logo%2Bfooter.png" style="width:60px;height:60px;" />
+ 
+<xa style="color:rgb(255,255,255);font-size:40px;font-family:consolas;z-index:2;text-shadow: 2px 2px 2px black;">
+<strong> Hacks & Fixes </strong>
+<xb style="color:rgb(255,255,255);font-size:12px;font-family:consolas;">
+HAFIX EVERY BIT.
+</xb> 
+</xa>
+
+</a></footer0>
+
+<footer3>
+<h15 style="float:left;color:rgb(255,255,255);font-weight:bold;text-shadow: 0.1em 0.1em 0.2em black;float:left;margin-left:20px;"> Our Supporters: </h15><br />
+<a style="color:rgb(255,255,255);margin-left:30px;" href="http://www.jrank.org/"> J - Rank </a> <br />
+<a style="color:rgb(255,255,255);margin-left:30px;" href="https://www.blogger.com/"> Google Blogger </a><br />
+<a style="color:rgb(255,255,255);margin-left:30px;" href="https://www.mozilla.org/" alt="For Graphics."> Mozilla </a> <br />
+
+</footer3>
+<footer1 style="float:right;margin-top:-80px;">
+<h15 style="float:right;color:rgb(255,255,255);font-weight:bold;text-shadow: 0.1em 0.1em 0.2em black;float:left;margin-left:20px;"> For Non-English: </h15>
+<br />
+<div id="google_translate_element">
+</div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</footer1>
+
+<footer2 style="float:right;margin-top:-80px;">
+<h15 style="float:right;color:rgb(255,255,255);font-weight:bold;text-shadow: 0.1em 0.1em 0.2em black;"> Share our Thoughts. </h15>
+<br />
+<a target="_blank" class="social1" style="margin-left:15px;float:left;height:30px;width:30px;background-image:url('http://static.squarespace.com/static/516d497de4b044ac537b049f/51d352ede4b04fe3f5d32786/51d35304e4b0a433e9c2854a/1372803954998/facebook+button.png');border-radius:0px;background-size: 100%;" href="http://www.facebook.com/share.php?u=http%3A//hacksandfixes.blogspot.in/&t=Check%20out%20this%20site"> 
+ </a>
+
+<a class="social1" target="_blank" style="float:left;margin-left:6px;height:30px;width:30px;background-image:url('http://fc09.deviantart.net/fs71/f/2013/025/2/0/twitter_button__logo_v2_by_pixxiepaynee-d5sog0x.png');border-radius:0px;background-size: 100%;" href="http://twitter.com/home?status=Check%20out%20this%20site:%20http%3A//hacksandfixes.blogspot.in/"> 
+ </a>
+
+<a class="social1" style="margin-left:15px;" href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-shape="round" data-pin-height="32"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" /></a>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+</footer2>
