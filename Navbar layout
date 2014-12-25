@@ -1,0 +1,184 @@
+<style>
+.icon-search1:before {
+    content:":G";
+}
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 1;
+        text-decoration:bold;}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial;
+        text-decoration:bold;
+        z-index: 1;}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 90px;
+	background:grey;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+        border-radius:2px;
+        font-family:consolas;
+        height:20px;
+        text-align:center;
+        z-index: 1;}
+
+#sddm li a:hover
+{	background: #49A3FF;
+        text-decoration:none;
+        z-index: 1;}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #F6F4EC;
+	border: 1px solid #5970B2;
+        text-decoration:none;
+        z-index: 1;}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		background: rgb(200,200,200);
+		color: black;
+		font: 13px arial;
+                text-decoration:none;
+                z-index: 1;
+                font-family:consolas;
+                border-radius:3px;}
+
+	#sddm div a:hover
+	{	background: #49A3FF;
+		color: #FFF;
+                text-decoration:none;
+                z-index: 1;}
+</style>
+
+
+<script>
+
+
+var timeout	= 10;
+var closetimer	= 0;
+var ddmenuitem	= 0;
+
+function clearsearchcache() {
+
+document.getElementById(hs).innerHTML;
+
+}
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+
+
+</script>
+
+
+
+<ul id="sddm" style="height:150px;margin-left:250px;">
+
+
+<li>
+<a style="background-color:#6FBE4A;background-image:url('http://4.bp.blogspot.com/-luurM7Jty04/VJWj3JZYwJI/AAAAAAAAAEw/TsaZBMrjJKk/s0/1.png');" href="https://hacksandfixes.blogspot.in/" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
+</li>
+
+
+<li>
+<a style="width:auto;background-color:#E14164;background-image:url('http://4.bp.blogspot.com/-luurM7Jty04/VJWj3JZYwJI/AAAAAAAAAEw/TsaZBMrjJKk/s0/1.png');" href="#" onmouseover="mopen('m2')" onmouseout="mclosetime()"> Computers </a>
+
+<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+        <a href="http://hacksandfixes.blogspot.in/p/blog-page.html">Linux First Run</a>
+        <a href="http://hacksandfixes.blogspot.in/p/computer-tips.html">File extensions-Win</a>
+        
+</div>
+
+</li>
+
+    <li><a style="background-color:#C0413C;background-image:url('http://4.bp.blogspot.com/-luurM7Jty04/VJWj3JZYwJI/AAAAAAAAAEw/TsaZBMrjJKk/s0/1.png');" href="#">Electronics</a>
+</li>
+
+    <li><a style="background-color:#005DA5;background-image:url('http://4.bp.blogspot.com/-luurM7Jty04/VJWj3JZYwJI/AAAAAAAAAEw/TsaZBMrjJKk/s0/1.png');" href="#" onmouseover="mopen('m3')" onmouseout="mclosetime()">Life Hacks</a>
+    <div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+        <a href="http://hacksandfixes.blogspot.in/p/life-hacks.html"> Buying a car </a>
+        </div>
+
+
+</li>
+    
+<li>
+
+<a style="background-color:#FFCD02;background-image:url('http://4.bp.blogspot.com/-luurM7Jty04/VJWj3JZYwJI/AAAAAAAAAEw/TsaZBMrjJKk/s0/1.png');" href="#" onmouseover="mopen('m4')"> Academics </a>
+
+ <div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+        <a href="http://hacksandfixes.blogspot.in/p/blog-page_17.html"> Equations Calculators </a>
+        </div>
+</li>
+
+
+
+
+<!---------Google search bar! Please improve it if you want scott-------------!>
+
+<li>
+
+<form  method="get" action="http://www.google.com/search">
+ <input onclick="clearsearchcache()" id="hs" class="icon-search1" type="text" value="Search Hacks" onfocus="if (this.value=='Search Hacks') this.value='';" size="30" maxlength="255" value="Search Hacks" style="width:236px;margin-top:-1px;height:22px;text-decoration:italic;text-align:right;padding-right:5px;"/>
+</form>
+
+<!----------------------------Here the search bar ends--------------------------!>
+</li>
+</ul>
+
+<div style="clear:both"></div>
